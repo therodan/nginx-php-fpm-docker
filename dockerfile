@@ -8,6 +8,8 @@ COPY ./conf/supervisord.conf /etc/supervisord.conf
 # Nginx
 COPY ./conf/default.conf /etc/nginx/conf.d/default.conf
 
+RUN chmod a+x /etc/supervisord.conf && chmod a+x /etc/nginx/conf.d/default.conf
+
 # Logs
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
