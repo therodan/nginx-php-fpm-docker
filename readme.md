@@ -1,4 +1,4 @@
-# PHP 7-fpm Docker container with composer
+# PHP 7-fpm Docker container with composer and nginx
 
 ## PHP Extensions
 
@@ -10,5 +10,3 @@
 * mysqli
 
 ## Docker-compose
-
-Uses nginx as a proxy to php-fpm
